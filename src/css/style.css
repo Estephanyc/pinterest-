@@ -1,0 +1,71 @@
+header {
+    border-bottom: 1px solid #e5e0e0;
+    padding-top: .7rem;
+}
+
+.logo {
+    color: #be251e;
+    font-size: 2.4rem;
+    border-radius: 100px;
+    border: 9px solid #ffffff;
+}
+
+.logo:hover {
+    border: 9px solid #efeff0;
+    border-radius: 100px
+}
+
+.search {
+    background: #efeff0;
+    padding: .2rem;
+    border-radius: 5px;
+}
+
+.search input {
+    background: none;
+    border: none;
+    font-weight: bold;
+}
+
+.search i {
+    padding: .5rem;
+    color: #888484;
+    font-size: 1.2rem;
+}
+
+.menu {
+    padding-left: 10px;
+    text-align: right;
+}
+
+.menu a {
+    font-family: 'Ubuntu', sans-serif;
+    color: #979696;
+    font-weight: bold;
+    padding: .7rem;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.menu a:active {
+    color: #453d3d;
+}
+
+.menu i {
+    color: #979696;
+    padding: .4rem;
+    font-size: 1.4rem;
+}
+
+.menu a:hover {
+    background-color: #f5f5f5;
+    text-decoration: none;
+    color: #979696;
+    border-radius: 50px;
+}
+
+.menu img {
+    width: 30px;
+    border: 2px solid #fff;
+    border-radius: 100px;
+}
