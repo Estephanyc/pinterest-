@@ -70,20 +70,118 @@ header {
     border-radius: 100px;
 }
 
+#appContainer {
+    margin-top: 2rem
+}
+
 .pin {
-    float: left
+    border: none;
+}
+
+.pin:hover {
+    cursor: zoom-in
+}
+
+.pinTitle {
+    font-weight: bold;
+    margin-bottom: .75rem;
+    color: #525252;
+    font-size: 1rem;
+}
+
+.pinUser {
+    display: inline-block;
+    background-color: #f3c6c3;
+    color: #ffffff;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: .3rem;
+    width: 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-left: .4rem;
 }
 
 .pin img {
-    border-radius: 1rem;
-    width: 100px
+    border-radius: 1.5rem;
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
+.modal img {
+    width: 100%;
+}
+
+.modalUserIcon {
+    float: left;
+    font-size: 1.8rem;
+    width: 40px;
+}
+
+.modalUserText {
+    float: left;
+    font-size: .9rem;
+    padding-top: 1rem;
+}
+
+.leerlo {
+    margin: .8rem;
+    background-color: #e4e1e1;
+}
+
+.icons-modal i {
+    color: #979696;
+    padding: .6rem;
+    font-size: 1rem;
+}
+
+.savePinModal {
+    margin-top: .7rem;
+}
+
+.modal-open .modal {
+    background: #efefef;
+}
+
+.modal-content,
+.modal-header {
+    border: none
+}
+
+.icons-float {
+    right: 5%;
+    top: 50%;
+    position: absolute;
+}
+
+.icons-float i {
+    display: block;
+    color: #333;
+    background-color: #fff;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: .3rem;
+    font-size: 1rem;
+    padding: .8rem;
+}
+
+.closeButton {
+    top: 5%;
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
     .card-columns {
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
     }
 }
 
