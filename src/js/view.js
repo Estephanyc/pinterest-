@@ -4,7 +4,7 @@ window.showPinsList = function (pin,imageUrl) {
         render += `<img class="card-img-top" src="${imageUrl}">`
         render += `<div class="card-body">`
         render += `<h5 class="pinTitle">${pin.title}</h5>`
-       // render += `<span class="pinTitle">12 k</span>`
+        render += `<p class="likes"><i class="fas fa-thumbtack"> 98</i> <i class="fas fa-check"> 9</i></p>`
         render += `<p class="card-text">${pin.description}</p>`;
         render += `<p class="card-text"><div class="pinUser">M</div>${pin.user}</p>`;
         render += `</div>`;

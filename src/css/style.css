@@ -1,3 +1,7 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 header {
     border-bottom: 1px solid #e5e0e0;
     padding-top: .7rem;
@@ -8,7 +12,6 @@ header {
     font-size: 2rem;
     border-radius: 100px;
     border: 9px solid #ffffff;
-    line-height: 1rem;
 }
 
 .logo:hover {
@@ -32,7 +35,7 @@ header {
     border-left: 1px solid #cecccc;
     font-size: .9rem;
     font-weight: bold;
-    color: #535353;
+    color: #2e2d2d;
 }
 
 .search i {
@@ -47,7 +50,6 @@ header {
 }
 
 .menu a {
-    font-family: 'Ubuntu', sans-serif;
     color: #8a8989;
     font-weight: bold;
     padding: .7rem;
@@ -216,6 +218,12 @@ header {
 .scroll::-webkit-scrollbar-button:increment {
     background-image: url("../../assets/img/arrow-right-01-512.png");
     background-size: contain
+}
+
+.likes i {
+    font-size: .8rem;
+    color: #979595;
+    margin: .4rem
 }
 
 @media (min-width: 600px) and (max-width: 768px) {
