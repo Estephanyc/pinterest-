@@ -47,12 +47,12 @@
             </div>
         </div>
     </header>
-    <section class="container">
+    <section class="container-fluid">
         <div class="row">
             <div class="tags-container scroll" id="tags"></div>
         </div>
     </section>
-    <section class="container">
+    <section class="container-fluid">
         <div class="row">
             <div class="card-columns" id="appContainer"></div>
         </div>
@@ -72,6 +72,18 @@
         </div>
         <div class="modal-dialog" role="document">
             <div class="modal-content">
+                <div class="row pd-header-modal">
+                    <div class="col-9 icons-modal">
+                        <i class="fas fa-upload"></i>
+                        <i class="fas fa-check"></i>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-danger savePinModal">
+                            <i class="fas fa-thumbtack"></i>
+                            Guardar</button>
+                    </div>
+                </div>
                 <div class="modal-header">
                     <h5 class="modal-title" id="pinModalTitle"></h5>
                 </div>

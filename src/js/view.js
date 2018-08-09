@@ -4,7 +4,7 @@ window.showPinsList = function (pin,imageUrl) {
         render += `<img class="card-img-top" src="${imageUrl}">`
         render += `<div class="card-body">`
         render += `<h5 class="pinTitle">${pin.title}</h5>`
-        render += `<p class="likes"><i class="fas fa-thumbtack"> 98</i> <i class="fas fa-check"> 9</i></p>`
+        render += `<p class="likes"><i class="fas fa-thumbtack"> 36.6k</i> <i class="fas fa-check"> 9</i></p>`
         render += `<p class="card-text">${pin.description}</p>`;
         render += `<p class="card-text"><div class="pinUser">M</div>${pin.user}</p>`;
         render += `</div>`;
@@ -12,12 +12,11 @@ window.showPinsList = function (pin,imageUrl) {
     appContainer.innerHTML += render;
 };
 window.showModal = function (pin,image) {
-    console.log(pin)
     $('#exampleModal').modal('show')
-    pinModalTitle.innerHTML = pin[0].title
+    pinModalTitle.innerHTML = pin.title
     imageModal.innerHTML= `<img class="" src="${image}">`
-    userModal.innerHTML = pin[0].user
-    modalDescription.innerHTML = pin[0].description
+    userModal.innerHTML = pin.user
+    modalDescription.innerHTML = pin.description
 }
 window.showTags = function (tag) {
     let color = '#'; 

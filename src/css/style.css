@@ -9,7 +9,7 @@ header {
 
 .logo {
     color: #be251e;
-    font-size: 2rem;
+    font-size: 1.9rem;
     border-radius: 100px;
     border: 9px solid #ffffff;
 }
@@ -46,7 +46,6 @@ header {
 
 .menu {
     padding-left: 10px;
-    text-align: right;
 }
 
 .menu a {
@@ -64,7 +63,7 @@ header {
 
 .menu i {
     color: #979696;
-    padding: .4rem;
+    padding: .6rem;
     font-size: 1.4rem;
 }
 
@@ -82,7 +81,7 @@ header {
 }
 
 #appContainer {
-    margin-top: 2rem
+    padding: 1.5rem;
 }
 
 .pin {
@@ -132,6 +131,13 @@ header {
     float: left;
     font-size: .9rem;
     padding-top: 1rem;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    color: #474444;
+    font-weight: bold;
+    line-height: 1.5;
 }
 
 .leerlo {
@@ -198,8 +204,14 @@ header {
     cursor: pointer;
 }
 
+.pd-header-modal {
+    padding-left: .6rem;
+    padding-right: .6rem;
+    padding-top: .5rem;
+}
+
 .scroll::-webkit-scrollbar {
-    width: 4px;
+    width: 30px;
 }
 
 .scroll::-webkit-scrollbar-track {

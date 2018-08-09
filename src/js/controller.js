@@ -17,7 +17,7 @@ window.openModal = (id,image) => {
     const pins = window.getPinsList();
     pins().then((pinsArray) => {
         const pinEncontrado = pinsArray.filter(pin => pin.id == id);
-        showModal(pinEncontrado,image)
+        showModal(pinEncontrado[0],image)
     })
 }
 let tagsArray = []
