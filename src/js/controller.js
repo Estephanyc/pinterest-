@@ -40,3 +40,22 @@ window.filterPins = (search)=>{
             return element.title.toLowerCase().indexOf(search.toLowerCase()) >= 0;
         })
 }
+let counter= 41;
+window.addPin = ()=>{
+    console.log('agregado')
+    let title =  titleNewPin.value;
+    let description =  descriptionWebPin.value;
+    const images = window.getPinImage();
+    images.then((image) => {
+        let object = {
+            "id": counter++,
+            "title": title,
+            "description": description,
+            "user": "Minerva Welch",
+            "image": image,
+            "username": "dulcefru", 
+            "hashtag": "Colors"
+        }
+        window.addPinObject(object)
+    })   
+}

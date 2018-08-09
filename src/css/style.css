@@ -165,9 +165,10 @@ header {
 }
 
 .icons-float {
+    z-index: 99999;
     right: 5%;
     top: 50%;
-    position: absolute;
+    position: fixed;
 }
 
 .icons-float i {

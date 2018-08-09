@@ -13,7 +13,7 @@ window.showPinsList = function (pin) {
     appContainer.innerHTML += render;
 };
 window.showModal = function (pin) {
-    $('#exampleModal').modal('show')
+    $('#pinModal').modal('show')
     pinModalTitle.innerHTML = pin.title
     imageModal.innerHTML= `<img class="" src="${pin.image}">`
     userModal.innerHTML = pin.user
@@ -30,4 +30,7 @@ window.showTags = function (tag) {
     render += `</div>`
     tags.innerHTML += render;
     document.getElementById(tag).style.background = color; 
+}
+window.showModalAddPin = ()=>{
+    $('#addPinModal').modal('show')
 }

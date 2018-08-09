@@ -27,11 +27,16 @@ window.getPin= (id)=>{
         }
     );
 }
-
 window.updateImagePin = (pin, updateObj)=>{
     let getPin = window.getPin(pin.id)
     Object.entries(updateObj).forEach(element => {
         getPin[element[0]] = element[1];
     });
     return pin
+}
+window.addPinObject = (object) =>{
+   pinsObject.push(object);
+   pinsObject.forEach(element => {
+       window.showPinsList(element);
+   });
 }
