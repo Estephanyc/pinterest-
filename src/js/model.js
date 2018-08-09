@@ -20,6 +20,3 @@ window.getPinImage = ()=>{
         alert(err)
     });
 }
-window.addPinImage = (pin,image) =>{
-
-}

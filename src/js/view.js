@@ -19,3 +19,15 @@ window.showModal = function (pin,image) {
     userModal.innerHTML = pin[0].user
     modalDescription.innerHTML = pin[0].description
 }
+window.showTags = function (tag) {
+    let color = '#'; 
+    let letters = ['a78f7a', 'ba895e', '74882e', '97928c', '5f819f', 'ffbf00']; //Set your colors here
+    color += letters[Math.floor(Math.random() * letters.length)];
+
+    let render = '';
+    render += `<div class="tag" id="${tag}">`
+    render += `<span class="tag-title">${tag}</span>`
+    render += `</div>`
+    tags.innerHTML += render;
+    document.getElementById(tag).style.background = color; 
+}

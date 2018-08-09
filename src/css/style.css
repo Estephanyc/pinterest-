@@ -5,9 +5,10 @@ header {
 
 .logo {
     color: #be251e;
-    font-size: 2.4rem;
+    font-size: 2rem;
     border-radius: 100px;
     border: 9px solid #ffffff;
+    line-height: 1rem;
 }
 
 .logo:hover {
@@ -17,7 +18,6 @@ header {
 
 .search {
     background: #efeff0;
-    padding: .2rem;
     border-radius: 5px;
 }
 
@@ -25,6 +25,14 @@ header {
     background: none;
     border: none;
     font-weight: bold;
+}
+
+.btn-outline-secondary {
+    border: none;
+    border-left: 1px solid #cecccc;
+    font-size: .9rem;
+    font-weight: bold;
+    color: #535353;
 }
 
 .search i {
@@ -40,9 +48,10 @@ header {
 
 .menu a {
     font-family: 'Ubuntu', sans-serif;
-    color: #979696;
+    color: #8a8989;
     font-weight: bold;
     padding: .7rem;
+    margin-left: .5rem;
     font-size: 1rem;
     display: inline-block;
 }
@@ -167,6 +176,46 @@ header {
 
 .closeButton {
     top: 5%;
+}
+
+.tags-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 1rem
+}
+
+.tag {
+    color: #ffffff;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+    display: inline-block;
+    margin: .4rem;
+    padding: .8rem;
+    cursor: pointer;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 4px;
+}
+
+.scroll::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background: #fff;
+}
+
+.scroll::-webkit-scrollbar-button:decrement {
+    background-image: url("../../assets/img/arrow-left-01-128.png");
+    background-size: contain
+}
+
+.scroll::-webkit-scrollbar-button:increment {
+    background-image: url("../../assets/img/arrow-right-01-512.png");
+    background-size: contain
 }
 
 @media (min-width: 600px) and (max-width: 768px) {
