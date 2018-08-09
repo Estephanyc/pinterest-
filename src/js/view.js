@@ -1,7 +1,8 @@
-window.showPinsList = function (pin,imageUrl) {
+window.showPinsList = function (pin) {
+   // console.log(pin)
     let render = '';
-        render += `<div class="card pin" onclick="window.openModal('${pin.id}', '${imageUrl}')">`;
-        render += `<img class="card-img-top" src="${imageUrl}">`
+        render += `<div class="card pin" onclick="window.openModal('${pin.id}')">`;
+        render += `<img class="card-img-top" src="${pin.image}">`
         render += `<div class="card-body">`
         render += `<h5 class="pinTitle">${pin.title}</h5>`
         render += `<p class="likes"><i class="fas fa-thumbtack"> 36.6k</i> <i class="fas fa-check"> 9</i></p>`
@@ -11,10 +12,10 @@ window.showPinsList = function (pin,imageUrl) {
         render += `</div>`;
     appContainer.innerHTML += render;
 };
-window.showModal = function (pin,image) {
+window.showModal = function (pin) {
     $('#exampleModal').modal('show')
     pinModalTitle.innerHTML = pin.title
-    imageModal.innerHTML= `<img class="" src="${image}">`
+    imageModal.innerHTML= `<img class="" src="${pin.image}">`
     userModal.innerHTML = pin.user
     modalDescription.innerHTML = pin.description
 }

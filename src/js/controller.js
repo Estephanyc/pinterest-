@@ -7,18 +7,17 @@ window.listPins = function () {
        pinsArray.forEach((pin) => {
          const images = window.getPinImage();
             images.then((image)=>{
-                window.showPinsList(pin,image);
-                window.filterTags(pin.hashtag)
+                window.updateImagePin(pin, {
+                    image: image
+                });
+                window.showPinsList(pin);
+                window.filterTags(pin.hashtag);
             })
        })
    })
 };
-window.openModal = (id,image) => {
-    const pins = window.getPinsList();
-    pins().then((pinsArray) => {
-        const pinEncontrado = pinsArray.filter(pin => pin.id == id);
-        showModal(pinEncontrado[0],image)
-    })
+window.openModal = (id) => {
+    showModal(window.getPin(id))
 }
 let tagsArray = []
 window.filterTags = (tag) =>{
@@ -27,4 +26,17 @@ window.filterTags = (tag) =>{
         tagsArray.push(tag)
         window.showTags(tag)
     }
+}
+searchPin.addEventListener("change", function () {
+    appContainer.innerHTML = '';
+    window.filterPins(searchPin.value).forEach(element => {
+        console.log(element)
+            window.showPinsList(element)
+        });       
+});
+window.filterPins = (search)=>{
+    const pins = pinsObject
+    return pins.filter(function (element) {
+            return element.title.toLowerCase().indexOf(search.toLowerCase()) >= 0;
+        })
 }

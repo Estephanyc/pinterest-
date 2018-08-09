@@ -1,10 +1,10 @@
+let pinsObject = '';
 window.getPinsList = () =>{
-    let pins = '';
     let requiereData = async function () {
         try {
             const jsonPins = await fetch('https://estephanyc.github.io/pinterest-/assets/data/data.json');
-            pins = await jsonPins.json();
-            return pins
+            pinsObject = await jsonPins.json();
+            return pinsObject
         } catch (err) {
             alert('no se pudierón cargar los datos' + err);
         }
@@ -19,4 +19,19 @@ window.getPinImage = ()=>{
     }).catch(err => {
         alert(err)
     });
+}
+window.getPin= (id)=>{
+    return pinsObject.find(
+        element => {
+            return element.id == id;
+        }
+    );
+}
+
+window.updateImagePin = (pin, updateObj)=>{
+    let getPin = window.getPin(pin.id)
+    Object.entries(updateObj).forEach(element => {
+        getPin[element[0]] = element[1];
+    });
+    return pin
 }
