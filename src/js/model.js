@@ -2,7 +2,7 @@ window.getPinsList = () =>{
     let pins = '';
     let requiereData = async function () {
         try {
-            const jsonPins = await fetch('../../assets/data/data.json');
+            const jsonPins = await fetch('https://estephanyc.github.io/pinterest-/assets/data/data.json');
             pins = await jsonPins.json();
             return pins
         } catch (err) {
